@@ -23,8 +23,8 @@ import utilities.WebDriverInstance;
 public class UserList_Excel extends Base {
 
 	@BeforeMethod
-	public void setup() {
-		test = Report.createTest("method.getName()");
+	public void setup(Method method) {
+		test = Report.createTest(method.getName());
 		driver = new WebDriverInstance();
 	}
 
