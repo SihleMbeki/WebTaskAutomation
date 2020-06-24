@@ -120,7 +120,7 @@ public class WebDriverInstance {
 	public String screenShot() {
 		try {
 			Date date=new Date();
-			String fileName=Report.reportPath+date.toString().replace(":", "_").replace(" ", "")+".jpg";
+			String fileName=Report.reportPath+"\\"+date.toString().replace(":", "_").replace(" ", "")+".jpg";
 			File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screenshot, new File(fileName));
 			return fileName;
