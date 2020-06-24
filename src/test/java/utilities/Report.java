@@ -17,8 +17,8 @@ public class Report {
 
 	public static void createReport(String directory) {
 		reportPath=directory;
-		reportPath+="\\"+ filename;
-		htmlReporter = new ExtentHtmlReporter(reportPath);
+		filename=reportPath+"\\Report.html";
+		htmlReporter = new ExtentHtmlReporter(filename);
 		htmlReporter.config().setEncoding("utf-8");
 		htmlReporter.config().setDocumentTitle("QA Automation");
 		htmlReporter.config().setReportName("Way2Automation");

@@ -39,6 +39,8 @@ public class Listener  extends Base implements ITestListener{
 			Base.driver.getInstance().close();
 		}
 		
+		Report.closeReport();
+		
 		
 	}
 
