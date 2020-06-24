@@ -9,12 +9,15 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Report {
 	public static ExtentHtmlReporter htmlReporter;
+	public static String reportPath;
 	private static ExtentReports reports;
 	private static String filename="Report.html";
+	
 
 	public static void createReport(String directory) {
-		directory+="\\"+ filename;
-		htmlReporter = new ExtentHtmlReporter(directory);
+		reportPath=directory;
+		reportPath+="\\"+ filename;
+		htmlReporter = new ExtentHtmlReporter(reportPath);
 		htmlReporter.config().setEncoding("utf-8");
 		htmlReporter.config().setDocumentTitle("QA Automation");
 		htmlReporter.config().setReportName("Way2Automation");

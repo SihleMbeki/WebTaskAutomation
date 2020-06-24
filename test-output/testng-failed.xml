@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="test"/>
+          <include name="test" invocation-numbers="0"/>
           <include name="suiteSetup"/>
           <include name="suiteCleanup"/>
         </methods>
