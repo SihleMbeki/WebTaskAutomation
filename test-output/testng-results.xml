@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="224401" started-at="2020-06-24T21:14:56Z" finished-at="2020-06-24T21:18:40Z">
+  <suite name="Default suite" duration-ms="28386" started-at="2020-06-24T21:40:36Z" finished-at="2020-06-24T21:41:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="224401" started-at="2020-06-24T21:14:56Z" finished-at="2020-06-24T21:18:40Z">
+    <test name="Default test" duration-ms="28386" started-at="2020-06-24T21:40:36Z" finished-at="2020-06-24T21:41:05Z">
       <class name="testing.UserList_Excel">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteSetup" is-config="true" duration-ms="266" started-at="2020-06-24T23:14:56Z" finished-at="2020-06-24T23:14:56Z">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteSetup" is-config="true" duration-ms="269" started-at="2020-06-24T23:40:36Z" finished-at="2020-06-24T23:40:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="setup" is-config="true" duration-ms="6739" started-at="2020-06-24T23:14:57Z" finished-at="2020-06-24T23:15:03Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="setup" is-config="true" duration-ms="6399" started-at="2020-06-24T23:40:37Z" finished-at="2020-06-24T23:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testing.UserList_Excel@5034c75a]" name="test" duration-ms="216309" started-at="2020-06-24T23:15:03Z" data-provider="getData" finished-at="2020-06-24T23:18:40Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testing.UserList_Excel@5034c75a]" name="test" duration-ms="20924" started-at="2020-06-24T23:40:43Z" data-provider="getData" finished-at="2020-06-24T23:41:04Z">
           <params>
             <param index="0">
               <value>
@@ -96,23 +96,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-24T23:18:40Z" finished-at="2020-06-24T23:18:40Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-24T23:41:05Z" finished-at="2020-06-24T23:41:05Z">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-31FBK49', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 32550f0b5c0eaf6f8be4f09e8851df6c]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e1790744a62f520364323df11987dfd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-31FBK49', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 32550f0b5c0eaf6f8be4f09e8851df6c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e1790744a62f520364323df11987dfd
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -159,7 +159,7 @@ Session ID: 32550f0b5c0eaf6f8be4f09e8851df6c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="suiteCleanup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteCleanup" is-config="true" duration-ms="0" started-at="2020-06-24T23:18:40Z" finished-at="2020-06-24T23:18:40Z">
+        <test-method status="SKIP" signature="suiteCleanup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteCleanup" is-config="true" duration-ms="0" started-at="2020-06-24T23:41:05Z" finished-at="2020-06-24T23:41:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteCleanup -->
