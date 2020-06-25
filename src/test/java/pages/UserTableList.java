@@ -2,9 +2,7 @@ package pages;
 
 import java.util.Hashtable;
 
-import org.junit.Assert;
-import org.openqa.selenium.By;
-
+import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -86,7 +84,7 @@ public class UserTableList {
 		this.customer = customer;
 	}
 
-	public void databaseData(Hashtable<String,String> testData) {
+	public void databaseData(Hashtable<String, String> testData) {
 		this.fristname = testData.get("FirstName");
 		this.lastname = testData.get("LastName");
 		this.username = testData.get("Username");
@@ -96,6 +94,7 @@ public class UserTableList {
 		this.password = testData.get("Password");
 		this.customer = testData.get("Customer");
 	}
+
 	public void executeTest() {
 		Assert.assertTrue(validatePage());
 		Assert.assertTrue(addNewUser());

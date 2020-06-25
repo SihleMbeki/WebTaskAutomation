@@ -1,21 +1,17 @@
 package testing;
 
-import java.lang.reflect.Method;
-import java.util.Hashtable;
 
-import org.apache.poi.ss.usermodel.Row;
+import java.util.Hashtable;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import pages.UserTableList;
 import utilities.Database;
-import utilities.ExcelReader;
 import utilities.Report;
 import utilities.WebDriverInstance;
 
@@ -29,7 +25,7 @@ public class UserList_Database extends Base {
 	}
 
 	@Test(dataProvider = "getTableData")
-	public void test(Hashtable<String, String> usersList) {
+	public void addNewUser(Hashtable<String, String> usersList) {
 		driver.goTo("http://www.way2automation.com/angularjs-protractor/webtables/");
 		UserTableList userTableList = new UserTableList(driver, test);
 		userTableList.databaseData(usersList);

@@ -29,13 +29,12 @@ public class UserList_Excel extends Base {
 	}
 
 	@Test(dataProvider = "getData")
-	public void test(String firstname, String lastname, String username, String role, String email, String cell,
+	public void addNewUser(String firstname, String lastname, String username, String role, String email, String cell,
 			String password, String customer) {
 		driver.goTo("http://www.way2automation.com/angularjs-protractor/webtables/");
 		UserTableList userTableList = new UserTableList(driver, test);
 		userTableList.excelData(firstname, lastname, username, role, email, cell, password, customer);
 		userTableList.executeTest();
-		test.log(Status.PASS, "Test Passed");
 	}
 
 	@AfterMethod
