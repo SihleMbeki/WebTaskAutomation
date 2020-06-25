@@ -29,27 +29,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">29.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">42.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">testing.UserList_Excel<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1593035492313</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">testing.UserList_Database<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1593042423343</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">testing.UserList_Excel<td><a href="#m2"><b>test</b>  </a></td><td class="numi">1</td><td>1593035469553</td><td class="numi">21921</td></tr>
+<tr class="failedodd"><td rowspan="2">testing.UserList_Database<td><a href="#m2"><b>addNewUser</b>  </a></td><td class="numi">1</td><td>1593042388436</td><td class="numi">34141</td></tr><tr class="failedodd"><td><a href="#m3"><b>addNewUser</b>  </a></td><td class="numi">1</td><td>1593042388436</td><td class="numi">34141</td></tr>
 <tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">testing.UserList_Excel<td><a href="#m3"><b>suiteCleanup</b>  </a></td><td class="numi">1</td><td>1593035492348</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="3">testing.UserList_Database<td><a href="#m4"><b>setup</b>  </a></td><td class="numi">1</td><td>1593042423359</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1593042423365</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m6"><b>suiteCleanup</b>  </a></td><td class="numi">1</td><td>1593042423398</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">testing.UserList_Database<td><a href="#m7"><b>addNewUser</b>  </a></td><td class="numi">1</td><td>1593042423361</td><td class="numi">2</td></tr><tr class="skippedodd"><td><a href="#m8"><b>addNewUser</b>  </a></td><td class="numi">1</td><td>1593042423361</td><td class="numi">2</td></tr>
 </table>
 <h1>Default test</h1>
-<a id="m1"></a><h2>testing.UserList_Excel:tearDown</h2>
+<a id="m1"></a><h2>testing.UserList_Database:tearDown</h2>
 <div style="padding-left:3em">
 <p>invalid session id
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-31FBK49&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e26a7ee0f39c9b0ad0743aec89502fc3</p>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9a9b57ce400fd6a7daa543e2d363e75f</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -63,33 +65,38 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
 <br/>at utilities.WebDriverInstance.closeDriver(WebDriverInstance.java:37)
-<br/>at testing.UserList_Excel.tearDown(UserList_Excel.java:43)
+<br/>at testing.UserList_Database.tearDown(UserList_Database.java:38)
 <br/>27 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>testing.UserList_Excel:test</h2>
+<a id="m2"></a><h2>testing.UserList_Database:addNewUser</h2>
 <table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th><th style="padding-left:1em;padding-right:1em">Parameter #6</th><th style="padding-left:1em;padding-right:1em">Parameter #7</th><th style="padding-left:1em;padding-right:1em">Parameter #8</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">Tom</td>
-<td style="padding-left:.5em;padding-right:2em">Blue</td>
-<td style="padding-left:.5em;padding-right:2em">matt</td>
-<td style="padding-left:.5em;padding-right:2em">Customer</td>
-<td style="padding-left:.5em;padding-right:2em">matt@comp.com</td>
-<td style="padding-left:.5em;padding-right:2em">111222333</td>
-<td style="padding-left:.5em;padding-right:2em">4547###</td>
-<td style="padding-left:.5em;padding-right:2em">Company BBB</td>
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Username=User12, FirstName=FName1, Password=Pass1, LastName=LName1, Role=Admin, Cell=082555, Customer=Company AAA, Email=admin@mail.com}</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="8">
-<p>null</p>
-org.junit.Assert.fail(Assert.java:92)
-<br/>at org.junit.Assert.assertTrue(Assert.java:43)
-<br/>at org.junit.Assert.assertTrue(Assert.java:54)
-<br/>at pages.UserTableList.executeTest(UserTableList.java:102)
-<br/>at testing.UserList_Excel.test(UserList_Excel.java:37)
+<tr><td style="padding-left:3em" colspan="1">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertTrue(Assert.java:37)
+<br/>at org.testng.Assert.assertTrue(Assert.java:47)
+<br/>at pages.UserTableList.executeTest(UserTableList.java:101)
+<br/>at testing.UserList_Database.addNewUser(UserList_Database.java:32)
 <br/>25 lines not shown
 </td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>testing.UserList_Excel:suiteCleanup</h2>
+<a id="m3"></a><h2>testing.UserList_Database:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>testing.UserList_Database:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>testing.UserList_Database:suiteCleanup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>testing.UserList_Database:addNewUser</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Username=User2, FirstName=FName2, Password=Pass2, LastName=LName2, Role=Customer, Cell=083444, Customer=Company BBB, Email=cusomter@mail.com}</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

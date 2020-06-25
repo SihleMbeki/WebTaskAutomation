@@ -1,78 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="1" failed="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29417" started-at="2020-06-24T21:51:02Z" finished-at="2020-06-24T21:51:32Z">
+  <suite name="Default suite" duration-ms="42278" started-at="2020-06-24T23:46:21Z" finished-at="2020-06-24T23:47:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29417" started-at="2020-06-24T21:51:02Z" finished-at="2020-06-24T21:51:32Z">
-      <class name="testing.UserList_Excel">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteSetup" is-config="true" duration-ms="185" started-at="2020-06-24T23:51:02Z" finished-at="2020-06-24T23:51:02Z">
+    <test name="Default test" duration-ms="42278" started-at="2020-06-24T23:46:21Z" finished-at="2020-06-24T23:47:03Z">
+      <class name="testing.UserList_Database">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:testing.UserList_Database@5034c75a]" name="suiteSetup" is-config="true" duration-ms="272" started-at="2020-06-25T01:46:20Z" finished-at="2020-06-25T01:46:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:testing.UserList_Excel@5034c75a]" name="setup" is-config="true" duration-ms="6133" started-at="2020-06-24T23:51:03Z" finished-at="2020-06-24T23:51:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testing.UserList_Excel.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setup()[pri:0, instance:testing.UserList_Database@5034c75a]" name="setup" is-config="true" duration-ms="6617" started-at="2020-06-25T01:46:21Z" finished-at="2020-06-25T01:46:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testing.UserList_Excel@5034c75a]" name="test" duration-ms="21921" started-at="2020-06-24T23:51:09Z" data-provider="getData" finished-at="2020-06-24T23:51:31Z">
+        <test-method status="FAIL" signature="addNewUser(java.util.Hashtable)[pri:0, instance:testing.UserList_Database@5034c75a]" name="addNewUser" duration-ms="34141" started-at="2020-06-25T01:46:28Z" data-provider="getTableData" finished-at="2020-06-25T01:47:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tom]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Blue]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[matt]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Customer]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[matt@comp.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[111222333]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4547###]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Company BBB]]>
+                <![CDATA[{Username=User12, FirstName=FName1, Password=Pass1, LastName=LName1, Role=Admin, Cell=082555, Customer=Company AAA, Email=admin@mail.com}]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.assertTrue(Assert.java:43)
-	at org.junit.Assert.assertTrue(Assert.java:54)
-	at pages.UserTableList.executeTest(UserTableList.java:102)
-	at testing.UserList_Excel.test(UserList_Excel.java:37)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at pages.UserTableList.executeTest(UserTableList.java:101)
+	at testing.UserList_Database.addNewUser(UserList_Database.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,24 +64,24 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-24T23:51:32Z" finished-at="2020-06-24T23:51:32Z">
+        </test-method> <!-- addNewUser -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:testing.UserList_Database@5034c75a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-25T01:47:03Z" finished-at="2020-06-25T01:47:03Z">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-31FBK49', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e26a7ee0f39c9b0ad0743aec89502fc3]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9a9b57ce400fd6a7daa543e2d363e75f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-31FBK49', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e26a7ee0f39c9b0ad0743aec89502fc3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sihle\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9a9b57ce400fd6a7daa543e2d363e75f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -133,7 +95,7 @@ Session ID: e26a7ee0f39c9b0ad0743aec89502fc3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
 	at utilities.WebDriverInstance.closeDriver(WebDriverInstance.java:37)
-	at testing.UserList_Excel.tearDown(UserList_Excel.java:43)
+	at testing.UserList_Database.tearDown(UserList_Database.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -166,11 +128,30 @@ Session ID: e26a7ee0f39c9b0ad0743aec89502fc3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="suiteCleanup()[pri:0, instance:testing.UserList_Excel@5034c75a]" name="suiteCleanup" is-config="true" duration-ms="0" started-at="2020-06-24T23:51:32Z" finished-at="2020-06-24T23:51:32Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:testing.UserList_Database@5034c75a]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-25T01:47:03Z" finished-at="2020-06-25T01:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="addNewUser(java.util.Hashtable)[pri:0, instance:testing.UserList_Database@5034c75a]" name="addNewUser" duration-ms="2" started-at="2020-06-25T01:47:03Z" data-provider="getTableData" finished-at="2020-06-25T01:47:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=User2, FirstName=FName2, Password=Pass2, LastName=LName2, Role=Customer, Cell=083444, Customer=Company BBB, Email=cusomter@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUser -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:testing.UserList_Database@5034c75a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-25T01:47:03Z" finished-at="2020-06-25T01:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="suiteCleanup()[pri:0, instance:testing.UserList_Database@5034c75a]" name="suiteCleanup" is-config="true" duration-ms="0" started-at="2020-06-25T01:47:03Z" finished-at="2020-06-25T01:47:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteCleanup -->
-      </class> <!-- testing.UserList_Excel -->
+      </class> <!-- testing.UserList_Database -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
