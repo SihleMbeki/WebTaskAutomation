@@ -12,6 +12,7 @@ public class Report {
 	public static String reportPath;
 	private static ExtentReports reports;
 	private static String filename="Report.html";
+	public static ExtentTest test;
 	
 
 	public static void createReport(String directory) {
@@ -26,7 +27,7 @@ public class Report {
 	}
 
 	public static ExtentTest createTest(String testName) {
-		ExtentTest test=reports.createTest(testName);
+		test=reports.createTest(testName);
 	return test;
 	}
 
@@ -35,5 +36,4 @@ public class Report {
 			reports.flush();
 		}
 	}
-
 }

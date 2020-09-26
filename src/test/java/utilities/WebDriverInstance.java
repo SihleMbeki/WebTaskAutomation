@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -83,13 +84,33 @@ public class WebDriverInstance {
 			return driver.findElement(By.cssSelector(css));
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.fail();
 			return null;
 		}
 	}
-	public boolean waitForVisibilityOfElement(By xpath) {
+	public  boolean findElementByXpath(String xpath) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver,5);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(xpath));
+			driver.findElement(By.xpath(xpath));
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean waitForVisibilityOfElement(String xpath) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean waitForPresenceOfElement(String xpath) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

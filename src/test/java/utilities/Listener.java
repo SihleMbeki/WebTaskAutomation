@@ -1,10 +1,18 @@
 package utilities;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener implements ITestListener{
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.Markup;
+
+import testing.Base;
+
+public class Listener  extends Base implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -20,7 +28,17 @@ public class Listener implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		Report.test.log(Status.FAIL, "Test Failed");
+		try {
+			Report.test.fail("Screenshot",MediaEntityBuilder.createScreenCaptureFromPath(Base.driver.screenShot()).build());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		if(Base.driver.getInstance()!=null) {
+			Base.driver.getInstance().close();
+		}
+		
 		
 	}
 
